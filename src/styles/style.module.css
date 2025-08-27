@@ -116,14 +116,14 @@
   .card{
     flex: 0 0 100vw;
     flex-direction: row-reverse;
-    scroll-snap-align: start;
+    scroll-snap-align: center;
     scroll-snap-stop: always;
     gap: clamp(16px, min(5vw, 40px), 60px);
   }
   .cardTitle{
     margin-block: auto;
     writing-mode: horizontal-tb;
-    font-size: clamp(1.5rem, 2.5vw + 1rem, 3rem);
+    font-size: clamp(2rem, 4vw + 1rem, 5rem);
     transform: none;
     animation: titlePop 820ms cubic-bezier(.18,1.6,.4,1) both;
   }
