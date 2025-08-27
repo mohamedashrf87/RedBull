@@ -101,11 +101,6 @@
   100% { transform: translateY(4px) rotate(-0.5deg) scale(1); }
 }
 @media (max-width: 1200px) {
-  .card.active{
-    flex-direction: column;
-  }
-}
-@media (max-width: 740px) {
   .cardsWrapper {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
