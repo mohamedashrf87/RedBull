@@ -1,3 +1,4 @@
+import Head from "next/head";
 import styles from "@/styles/style.module.css";
 import Image from "next/image";
 import { useState } from "react";
@@ -51,8 +52,14 @@ function Cards() {
 
 export default function Home() {
   return (
-    <main className={styles.mainContainer}>
-      <Cards />
-    </main>
+    <>
+      <Head>
+        <title>Red Bull Cards</title>
+        <meta name="description" content="A collection of delicious berries" />
+      </Head>
+      <main className={styles.mainContainer}>
+        <Cards />
+      </main>
+    </>
   );
 }
